@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	.box{
+		height: 400px;
+		width: 200px;
+	}
+	.list{
+		margin: 0 auto;
+	}
+	.list li {
+		list-style: none;
+		float: left;
+		border: 1px solid blue;
+		margin: 0 auto;
+		margin-left: 2px;
+		cursor: pointer;
+
+	}
+</style>
+
+
+</head>
+<body>
+	<div class="box">
+		<img class ="pic" src="images/1.jpg" alt="">
+		<ul class="list">
+			<li id="a">1</li>
+			<li id="b">2</li>
+			<li id="c">3</li>
+			<li id="d">4</li>
+		</ul>
+	</div>
+<script src="jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+	$(".list li#a").click(function (){
+		$(".pic").attr("src","images/2.jpg");
+		// $(this).css("background-color","#f00").siblings().css("background-color","#00f")
+		$(this).css("background-color","#f00").siblings().css("background-color","#fff");
+	});
+	$(".list li#b").click(function (){
+		$(".pic").attr("src","images/3.jpg");
+		$(this).css("background-color","#f00").siblings().css("background-color","#fff")
+	});
+	$(".list li#c").click(function (){
+		$(".pic").attr("src","images/4.jpg");
+		$(this).css("background-color","#f00").siblings().css("background-color","#fff")
+	});
+	$(".list li#d").click(function (){
+		$(".pic").attr("src","images/5.jpg");
+		$(this).css("background-color","#f00").siblings().css("background-color","#fff")
+	});
+</script>
+</body>
+</html>
