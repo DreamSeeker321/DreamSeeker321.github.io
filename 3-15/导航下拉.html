@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航下拉菜单</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+	a{
+		display: block;
+		color: #fff;
+	}
+	.nav{
+		height: 70px;
+		background-color: #111;
+
+	}
+	.nav ul{
+		width: 930px;
+		height: 30px;
+		margin:0 auto;
+	}
+	.nav ul li {
+		width: 60px;
+		float: left;
+		padding:20px 20px;
+		color: #fff;
+		text-align: center;
+		line-height: 30px;
+		text-decoration: none;
+		list-style: none;
+		font-size: 20px;
+		background-color: #aaa;
+	}
+	.css {
+		width: 60px;
+		/*background-color: #444;*/
+	}
+	ul.css li{
+		background-color: #333;
+		margin-left: 5px;
+		display:block;
+		text-decoration: none;
+		text-align: center;
+		/*margin-top: 3px;*/
+		float: none;
+		width: 60px;
+		display: none;
+	}
+	.nav #css:hover{
+		-webkit-animation: bac 1s;
+		-o-animation: bac 1s;
+		animation: bac 1s;
+	}
+	@keyframes bac{
+		0%{background-color: #000;}
+		50%{background-color: #fff;}
+		100%{background-color: #000;}
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#" id="html">HTML</a></li>
+			<li id="css">
+				<a href="#" >CSS</a>
+				<ul class="css">
+					<li>CSS1</li>
+					<li>CSS2</li>
+					<li>CSS3</li>
+					<li>CSS4</li>
+				</ul>
+			</li>
+			<li><a href="#" id="js">JS</a></li>
+			<li><a href="#" id="help">HELP</a></li>
+		</ul>
+	</div>
+	<!-- <div class="box">
+		
+	</div> -->
+	<SCRIPT TYPE="text/javascript" src="jquery-1.11.1.js"></SCRIPT>
+	<script type="text/javascript">
+		$("#css").mouseenter(function(){
+			$(".css li").stop().animate{"slideUp":""}
+			// $(".css li").css("color":"#fff");
+		})
+		$("#css").mouseleave(function(){
+			$(".css li").stop().slideUp(300)
+		})
+
+	</script>
+</body>
+</html>

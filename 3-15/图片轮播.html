@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片轮播</title>
+</head>
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+	}
+	.pics{
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+	}
+	.pics1{
+		height: 200px;
+		width: 800px;
+	}
+	.pics1{
+		width: 800px;
+		height: 200px;
+		float: left;
+	}
+	.pics1 li{
+		float: left;
+		width: 200px;
+		height: 200px;
+	}
+	.list li{
+		width: 30px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		background-color: #00f;
+		float: left;
+		border: 1px solid red;
+	}
+</style>
+<body>
+	<div class="pics">		
+		<ul class="pics1">
+			<li><img src="images/1.jpg" alt="#"></li>
+			<li><img src="images/2.jpg" alt="#"></li>
+			<li><img src="images/3.jpg" alt="#"></li>
+			<li><img src="images/4.jpg" alt="#"></li>
+		</ul>		
+	</div>
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(".list li").click(function(){
+
+			var index = $(this).index();
+			var num = index * -200;
+			$(".pics1").stop().animate({"margin-left": num}, 2000)
+		})
+
+
+	</script>
+</body>
+</html>

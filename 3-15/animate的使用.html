@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animate</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+		.box{
+			width: 500px;
+			height: 50px;
+			background-color: #000;
+			margin: 0 auto;
+			overflow: hidden;
+			text-align: center;
+			line-height: 50px;
+		}
+		.css3-whole{
+			width: 40px;
+			height: 50px;
+			background-color: #000;
+		}
+		.css3-l{
+			background-color: #f00;
+		}
+		.css3-r{
+			background-color: #0f0;
+		}
+		.css3-l,.css3-r{
+			color: #fff;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<ul>
+			<li class="css3">
+				<ul class="css3-whole">
+					<li class="css3-l"><a href="">CSS3</a></li>
+					<li class="css3-r"><a href="">CSS3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">HELP</a></li>
+		</ul>
+	</div>
+	
+	<input type="button" value="盒子移动" id="button">
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(".box").mouseenter(function(){
+			$(".css3-whole").stop().animate({"margin-top":"-50px"},1000)
+		})
+		$(".box").mouseleave(function(){
+			$(".css3-whole").stop().animate({"margin-top":"0px"},1000)
+		})
+	</script>
+</body>
+</html>

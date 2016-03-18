@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>show and hide</title>
+</head>
+<style>
+	.box{
+		width: 200px;
+		height: 200px;
+		background-color: #f99;
+	}
+</style>
+<body>
+	
+	<input type="button" value="hide" id="hide">
+	<input type="button" value="show" id="show">
+	<input type="button" value="slideDown" id="slideDown">
+	<input type="button" value="slideUp" id="slideUp">
+	<input type="button" value="toggle" id="toggle">
+	<input type="button" value="fadeIn" id="fadeIn">
+	<input type="button" value="fadeOut" id="fadeOut">
+	<input type="button" value="slideToggle" id="slideToggle">
+	<input type="button" value="fadeToggle" id="fadeToggle">
+<!-- 	<input type="button" value="slideToggle" id="show"> -->
+	<div class="box"></div>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$("#hide").click(function(){
+			$(".box").hide(3000)
+		})
+		$("#show").click(function(){
+			$(".box").show(3000)
+		})
+		$("#slideDown").click(function(){
+			$(".box").slideDown(3000)
+		})
+		$("#slideUp").click(function(){
+			$(".box").slideUp(3000)
+		})
+		$("#toggle").click(function(){
+			$(".box").toggle(3000)
+		})
+		$("#fadeIn").click(function(){
+			$(".box").fadeIn(3000)
+		})
+		$("#fadeOut").click(function(){
+			$(".box").fadeOut(3000)
+		})
+		$("#slideToggle").click(function(){
+			$(".box").slideToggle(3000)
+		})
+		$("#fadeToggle").click(function(){
+			$(".box").fadeToggle(3000)
+		})
+	</script>
+</body>
+</html>
