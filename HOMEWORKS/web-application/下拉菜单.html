@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		display:block;
+		text-decoration:none;
+		color:#555;
+		text-align:center;
+		transition:color 1.5s;
+		-ms-transition:color 1.5s;
+		-moz-transition:color 1.5s;
+		-webkit-transition:color 1.5s;
+		-o-transition:color 1.5s;
+		}
+	ul{
+		list-style: none;
+	}
+	.top{
+		height: 50px;
+		background-color: #262626;
+		font-size: 20px;
+		text-align: center;
+		line-height: 50px;
+	}
+	nav{
+		width: 600px;
+		margin:0 auto;
+	}
+
+	.nav{
+		color: blue;
+	}
+	.nav li{
+		margin-left: 20px;
+		float:left;
+		text-align: center;
+		width: 80px;
+		background-color: grey;
+		font-size: 16px;
+		/*border: 1px solid grey;*/
+
+
+	}
+	.nav li:hover .menu{
+		display: block;
+		background-color: #f00;	
+	}
+	.nav li .menu:hover{
+		background-color: #f00;
+	}
+	.nav li .menu li a :hover{
+		background-color: #eee;
+	}
+	.top .nav .menu{
+	position: absolute;
+	display: none;
+	background-color: #262626;
+	float: left;
+
+	}
+	.top .nav .movie,.top .nav .katoon,.top .nav .um{
+		position: relative;
+	}
+	.top .nav .menu li{
+		background-color: #888;
+		color: #fff;
+		margin-top: 3px ;
+		width: 80px;
+		display: block;
+		margin-left: 0;
+		color: #fff;
+		transition:background-color 1.5s;
+		-ms-transition:background-color 1.5s;
+		-moz-transition:background-color 1.5s;
+		-webkit-transition:background-color 1.5s;
+		-o-transition:background-color 1.5s;
+		}
+</style>
+<body>
+	<div class="top">
+		<nav>
+			<ul class="nav">
+				<li class="movie">
+					<a href="#">动漫</a>
+				<ul class="menu">
+					<li><a href="#">国产动漫</a></li>
+					<li><a href="#">日本动漫</a></li>
+					<li><a href="#">英美动漫</a></li>
+					</ul>
+				</li>
+				<li class="katoon">
+					<a href="#">电影</a>
+					<ul class="menu">
+					<li><a href="#">科幻</a></li>
+					<li><a href="#">纪录片</a></li>
+					<li><a href="#">喜剧</a></li>
+					</ul>		
+				</li>
+				<li class="um">
+					<a href="#">美剧</a>
+					<ul class="menu">
+						<li><a href="#">生活大爆炸</a></li>
+						<li><a href="#">权利的游戏</a></li>
+						<li><a href="#">闪电侠</a></li>
+					</ul>
+				</li>
+			</ul>
+				
+		</nav>
+	</div>
+</body>
+</html>

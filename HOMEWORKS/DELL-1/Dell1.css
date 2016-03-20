@@ -1,0 +1,242 @@
+*{
+		margin: 0px;
+		padding: 0;
+		list-style-image: url(images/images/sanjiao_03.jpg);
+		}
+	.clear{
+		clear: both;
+	}
+		#header{
+			width:930px;
+			height:482px;
+			margin: 0 auto;
+			/*border: 1px solid red;*/
+		}
+		#top{
+			
+			height: 102px;
+			margin: 0 auto;
+		}
+		#banner{
+			height: 380px;
+					}
+		#logo{
+			float: left;
+			margin-top: 8px;
+			margin-left: 0px;
+		}
+		#nav{
+			height: 100px;
+			width: 501px;
+			float: left;
+		}
+		#nav ul li{
+			float: left;
+			margin-left: 30px;
+			margin-top: 48px;
+			text-align: center;
+			background-repeat: no-repeat;
+			padding-right: 17px;
+			background-image: url(images/images/sanjiao.jpg);
+			padding-right: 24px;
+			background-position: right center;
+			list-style: none;
+			font-family:  "Time New Roman",	TimeS,Serif;
+
+		}
+		#nav ul li span{
+			display: block;
+			font-size: 13px; 
+			font-weight: bold;
+		}
+		#search{
+			height: 102px;
+			width: 320px;
+			float: left;
+			margin-right: 0;
+		}
+
+		.a a,p {
+			float: left;
+			margin-left: 3px;
+			margin-bottom: 10px;
+			text-decoration: none;
+			font-family: "Time New Roman",	TimeS,Serif;
+		}
+		#b {
+			float: right;
+			/*height: 20px;*/
+			margin-bottom: 10px;
+			}
+		#c {
+			float: right;
+			clear: both;
+		}
+
+		#b{
+			clear: both;
+		}
+		#container{
+			width: 930px;
+			height:285px;
+			margin: 0 auto;
+		/*	border: 1px solid red;*/
+			margin-top: 15px;
+		}
+		.Dell-Service
+		{
+			width: 300px;
+			height: 285px;
+			float: left;
+			margin-right:10px;
+			border: 1px solid grey;
+		}
+		#service-title{
+			width: 300px;
+			height: 23px;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+		#ct-1{
+			width: 217px;/*height: 102px;*/
+			font-size: 7px;
+			margin-left:38px;
+			margin-top: 12px; 
+			font-family: "Time New Roman", TimeS,Serif;
+		}
+
+		#ct-2{
+			width: 217px;/*height: 102px;*/
+			margin-left:38px;
+			margin-top: 12px;
+			 font-size: 10px;
+			 font-family: "Time New Roman", TimeS,Serif;
+			 /*background-image: transparent;
+			 background-position: 0 0;*/
+		}
+		#Headlines-title{
+			width: 300px;
+			height: 23px;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+		ul#headlinetext{
+			margin-left:35px;
+			 font-size: 10px;
+			 font-family: "Time New Roman", TimeS,Serif;
+			 list-style-image:url(sanjiao_03.jpg);
+			 margin-top: 12px;
+}
+		}
+		.Dell-Headlines #headlinetext li {
+			margin-top: 3px;
+			padding: 5px;
+			/*margin-top: 12px;*/
+			font: 5px;
+		}
+		.Dell-Headlines ul li{
+			margin-top: 5px;
+		}
+
+		#Details-title{
+			width: 300px;
+			height: 23px;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+		.Dell-Headlines
+		{
+			width: 300px;
+			height: 285px;
+			float: left;
+			margin-right: 10px;
+			border: 1px solid grey;
+		}
+		#box{
+			border-top: 3px solid grey;
+			margin-top: 10px;
+		}
+		.Dell-Details{
+			width: 300px;
+			height: 285px;
+			float: left;
+			border: 1px solid grey;
+		}
+		.Dell-Details ul{
+			margin-top: 12px;
+			padding-left: 25px;
+			font: 10px;
+		}
+		.Dell-Details ul li{
+			font-size: 10px;
+			font-family: "Time New Roman", TimeS,Serif;
+		}
+		hr{
+			margin: 23px 0;
+		}
+		#serviceimg{
+			width: 300px;
+			height: 128px;
+		}
+		#headlineimg{
+			width: 300px;
+			height: 128px;
+		}
+		#Detailimg{
+			width: 300px;
+			height: 128px;
+		}
+		
+		#footer{
+			width: 930px;
+			height: 220px;
+			margin: 0 auto;
+			/*background-color: #aaa;*/
+			border: 1px solid grey;
+			margin-top: 15px;
+			padding-top: 15px;
+		}
+		#text-input{
+			margin:14px 0;
+		}
+		#fimg1{
+			float: left;
+			margin: 14px 0;
+		}
+		#fimg2{
+			float: right;
+			margin: 14px 0;
+		}
+		#footer div ul{
+			float: left;
+			margin-left: 15px;
+			font-family:  "Time New Roman",	TimeS,Serif;
+			font-size: 15px;
+			margin-top: 22px;
+			margin-right: 9px;
+			margin-left: 25px;
+		}
+		#search a{
+			font-size: 2px;
+		}
+		
+		#footer #top ul li{
+			margin-left: 20px;
+			margin-top: 22px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		.tail{
+			width: 932px;
+			height: 60px;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 13px;
+			float: left;
+			text-align: center;
+			/*margin-top: 33px;
+			margin-bottom: 33px;
+			margin-left: 31px;*/
+			margin:33px auto;
+			color: #547bbe;
+		}
+		
+		
